@@ -3,6 +3,7 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
+  api.use('threejs', ['client']);
   api.add_files(['build/cannon.js'],['client']);
   api.export(['CANNON'], ['client']);
 });
