@@ -1,8 +1,11 @@
-@@ -7046,4 +7046,5 @@
-     this.CANNON = CANNON;
- }
-
--}).apply(this);
+--- lib/cannon.js/build/cannon.js	2014-06-17 14:35:18.837270201 +0100
++++ build/cannon.js	2014-06-17 14:34:37.060392404 +0100
+@@ -8240,4 +8240,6 @@
+ 
+ },{"../collision/ArrayCollisionMatrix":3,"../equations/ContactEquation":14,"../equations/FrictionEquation":16,"../material/ContactMaterial":19,"../material/Material":20,"../math/Quaternion":22,"../math/Vec3":23,"../objects/Body":24,"../objects/RigidBody":26,"../shapes/Shape":33,"../solver/GSSolver":35,"../utils/EventTarget":38,"../utils/Vec3Pool":40,"./ContactGenerator":41}]},{},[2])
+ (2)
+-});
 \ No newline at end of file
-+}).apply(this);
-+CANNON = this.CANNON;
++});
++CANNON = window.CANNON;
++delete window.CANNON;
