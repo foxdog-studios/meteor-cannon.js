@@ -1,10 +1,12 @@
 Package.describe({
-  summary: 'A lightweight 3D physics engine written in JavaScript.'
+  summary: "[DON'T USE] A lightweight 3D physics engine written in JavaScript.",
+  version: "0.0.0_1",
+  git: "https://github.com/foxdog-studios/meteor-cannon.js"
 });
 
-Package.on_use(function (api) {
-  api.use('threejs', ['client']);
-  api.add_files(['build/cannon.js'],['client']);
-  api.export(['CANNON'], ['client']);
+Package.onUse(function (api) {
+  api.use('fds:threejs@67.0.0_1', 'client');
+  api.addFiles('build/cannon.js', 'client');
+  api.export('CANNON', 'client');
 });
 
