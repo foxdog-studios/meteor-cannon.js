@@ -1,6 +1,6 @@
 Package.describe({
   summary: "[DON'T USE] A lightweight 3D physics engine written in JavaScript.",
-  version: "0.0.0_2",
+  version: "0.0.0_3",
   git: "https://github.com/foxdog-studios/meteor-cannon.js"
 });
 
